@@ -77,10 +77,14 @@ body * {
 @media (max-width: 720px) {
   :root {
     --title-font-size: 2rem;
-    --subtitle-font-size: 1.7rem;
-    --subtitle-font-size-secondary: 1.3rem;
+    --subtitle-font-size: 1.4rem;
+    --subtitle-font-size-secondary: 1.1rem;
     --paragraph-font-size: 1rem;
     --small-font-size: 0.9rem;
+  }
+
+  .card {
+    flex-direction: column;
   }
 
   .presentation {
@@ -119,22 +123,58 @@ body * {
   }
 
   .right-side {
-    width: clamp(100px, 50%, 150px);
+    width: 300px;
     height: clamp(150px, 50vw, 300px);
   }
 
   footer img {
     object-fit: cover;
   }
+
+  .image-container {
+    overflow: hidden;
+    height: 250px;
+    width: auto;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+  }
+
+  .image-container > img {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .card {
+    flex-direction: column;
+    width: 95vw;
+    min-width: 0;
+    max-width: 100%;
+    align-items: center;
+  }
+  .image-container {
+    width: 100%;
+    height: auto;
+
+    margin: 0 auto;
+    aspect-ratio: 1/1;
+  }
+  .description {
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
 
 @media (min-width: 721px) and (max-width: 1200px) {
   :root {
     --title-font-size: 2.5rem;
-    --subtitle-font-size: 2.2rem;
-    --subtitle-font-size-secondary: 1.8rem;
-    --paragraph-font-size: 1.6rem;
-    --small-font-size: 1.4rem;
+    --subtitle-font-size: 1.7rem;
+    --subtitle-font-size-secondary: 1.3rem;
+    --paragraph-font-size: 1.2rem;
+    --small-font-size: 1.2rem;
+  }
+
+  .card {
+    flex-direction: row;
   }
 
   .presentation {
@@ -171,22 +211,45 @@ body * {
   }
 
   .right-side {
-    width: clamp(200px, 30w, 40vw);
+    width: 300px;
     height: clamp(300px, 35vh, 60vh);
   }
 
   .content-footer img {
     object-fit: cover;
   }
+
+  .card {
+    flex-direction: row;
+    width: 90vw;
+    max-width: 700px;
+    min-width: 0;
+    align-items: stretch;
+  }
+  .image-container {
+    width: 40%;
+    min-width: 180px;
+    max-width: 250px;
+    aspect-ratio: 1/1;
+  }
+  .description {
+    width: 60%;
+    padding: 1.2rem;
+    box-sizing: border-box;
+  }
 }
 
 @media (min-width: 1201px) and (max-width: 1700px) {
   :root {
     --title-font-size: 2.7rem;
-    --subtitle-font-size: 2rem;
-    --subtitle-font-size-secondary: 1.6rem;
-    --paragraph-font-size: 1.3rem;
+    --subtitle-font-size: 1.7rem;
+    --subtitle-font-size-secondary: 1.4rem;
+    --paragraph-font-size: 1.2rem;
     --small-font-size: 1.2rem;
+  }
+
+  .card {
+    flex-direction: row;
   }
 
   .presentation {
@@ -230,6 +293,25 @@ body * {
   .content-footer img {
     object-fit: cover;
   }
+
+  .card {
+    flex-direction: row;
+    width: min(90%, 700px);
+    max-width: 700px;
+    min-width: 0;
+    align-items: stretch;
+  }
+  .image-container {
+    width: 250px;
+    min-width: 200px;
+    max-width: 300px;
+    aspect-ratio: 1/1;
+  }
+  .description {
+    width: auto;
+    padding: 1.5rem;
+    box-sizing: border-box;
+  }
 }
 
 @media (min-width: 1701px) {
@@ -243,6 +325,10 @@ body * {
 
   body {
     gap: 80px;
+  }
+
+  .card {
+    flex-direction: row;
   }
 
   .presentation {
@@ -332,6 +418,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 20px;
   transition: height 0.2s ease-in-out, width 0.2s ease-in-out;
 }
@@ -364,13 +451,14 @@ main h1 {
   font-weight: var(--heading-font-weight);
 }
 
-.grid-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 350px), 1fr));
-  grid-gap: 1.5rem;
+.flex-cards {
+  display: flex;
+  flex-direction: column;
 }
 
 .card {
+  display: flex;
+  margin: 0.5rem;
   background-color: var(--bkg-color-secondary);
   box-shadow: var(--box-shadow);
   border-radius: 10px;
@@ -433,6 +521,10 @@ footer {
   display: flex;
   gap: 20px;
   padding: calc(var(--padding) * 2);
+}
+
+#footer-contact-desc {
+  color: var(--text-color-secondary);
 }
 
 .left-side {
