@@ -51,9 +51,8 @@ background-color: rgb(183, 183, 255);
 .container_box2{
 
 text-align: center;
-padding-top: 25px;
-padding-bottom: 20px;
 
+padding: 25px 1% 20px 1%;
 margin-left: 20px;
 margin-right: 20px;
 background-color: 0;
@@ -107,6 +106,7 @@ background-color: 0;
     border-radius: 5px;
     padding: 3px;
     margin-top: 20px;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -222,33 +222,87 @@ footer{
 
 /* responsive */
 
-@media (max-width: 768px) {
 
-    .container{
-    max-width: 90%;
-    width: 90%;
-    height: auto;
-    margin-top: 50px;
-    background-color: hsl(0, 0%, 12%);
-    border-radius:15px ;
+
+@media (min-width: 1200px) and (max-width: 1280px){
+
+.container{
+    max-width: 65%;
+}
 
 }
+
+@media (min-width: 1071px) and (max-width: 1199px){
+
+.container{
+    max-width: 70%;
+
+}
+.container_box2{
+
+padding-left: 1%;
+padding-right: 1%;
+}
+
+}
+
+
+@media (min-width: 940px) and (max-width: 1070px){
+
+.container{
+    max-width: 80%;
+
+}
+
+}
+
+@media (min-width: 834px) and (max-width: 939px){
+
+.container{
+    max-width: 100%;
+
+}
+
+}
+
+@media (min-width: 752px) and (max-width: 833px){
+
+h2{
+    font-size: 1.1rem;
+}
+
+.container{
+    max-width: 90%;
+
+}
+
+h3{
+    font-size: 1rem;
+}
+
+.edad{
+    font-size: 1.1rem;
+
+}
+
+body{
+    font-size: 15px;
+}
+
 }
 
 
 @media (max-width: 469px) {
 
 body{
-    font-size: 0.8rem;
+    font-size: 11px;
 }
     .container{
     max-width: 100%;
     width: 100%;
     height: auto;
     margin-top: 50px;
-    background-color: hsl(0, 0%, 12%);
-    border-radius:15px ;
-    
+
 
 }
 .img{
@@ -318,12 +372,12 @@ body{
 }
 /* 2da tarjeta */
 h2{
-    font-size: 1rem;
-    color: rgb(183, 183, 255);
+    font-size: 0.9rem;
+
 }
 
 h3{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .par{
@@ -336,7 +390,7 @@ h3{
 }
 
 .container_pasiones_Habilidades{
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
