@@ -80,63 +80,70 @@ body {
   margin-top: 0px;
 }
 
-.boton {
-  background-color: hsl(0, 0%, 20%);
-  width: 300px;
-  height: 50px;
-  border-radius: 5px;
-  padding: 3px;
-  margin-top: 20px;
+  .boton{
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+    background-color: hsl(0, 0%, 20%);
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    padding: 3px;
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
 }
 
-.link_social {
-  text-align: center;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: 1px;
+
+.link_social{
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: block;
+
 }
 
-.profil {
-  margin-bottom: 30px;
+.profil{
+    margin-bottom: 30px;
+}
+.boton:hover{
+    background-color: #2f244a;
+
+    transform:scale(1.1);
+    transition: 0.5s;
+
 }
 
-.boton:hover {
-  background-color: #2f244a;
+.link_social:hover{
+    color: rgb(183, 183, 255);
 
-  transform: translateX(100px);
-  transition: 1s;
-}
-
-.link_social:hover {
-  color: rgb(183, 183, 255);
 }
 
 .boton:focus-within {
-  outline: none;
-  background-color: #2f244a;
-  padding: 5px 30px;
-  transform: scale(1.1);
-  transition: 0.5s;
+    outline: none;
+    background-color: #2f244a; 
+    padding: 5px 30px;
+    transform: scale(1.1); 
+    transition: 0.5s;
 }
+
 
 .link_social:focus,
 .boton:focus-within .link_social {
-  color: rgb(183, 183, 255);
+    color: rgb(183, 183, 255);
 }
-
 .link_social:focus {
-  outline: none;
-  background-color: #2f244a;
-  padding: 5px 30px;
-  border-radius: 3px;
-  transform: translateX(100px);
-  transition: 1s;
+    outline: none;
+    background-color: #2f244a;
+    padding: 5px 30px;
+    border-radius: 3px;
+    transform:scale(0.9);
+    transition: 0.2s;
+
 }
 
 /* 2da tarjeta */
@@ -285,43 +292,7 @@ footer {
     color: #2f244a;
   }
 
-  .boton {
-    width: 170px;
-    height: 25px;
-    border-radius: 5px;
-    padding: 3px;
-    margin-top: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
-  }
 
-  .link_social {
-    font-size: 0.8rem;
-    font-weight: 700;
-  }
-
-  .profil {
-    margin-bottom: 30px;
-  }
-  .container1 {
-    max-width: 40%;
-    width: 90%;
-    height: auto;
-    margin-top: 0px;
-    background-color: 0;
-    border-radius: 15px;
-    margin-left: 10px;
-  }
-
-  .container2 {
-    max-width: 60%;
-    width: 90%;
-    height: auto;
-    margin-top: 0px;
-    background-color: 0;
-    border-radius: 15px;
-    margin-left: 5px;
-  }
   /* 2da tarjeta */
   h2 {
     font-size: 0.9rem;
