@@ -100,7 +100,6 @@ body {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 1px;
-  display: block;
 }
 
 .profil {
@@ -110,8 +109,8 @@ body {
 .boton:hover {
   background-color: #2f244a;
 
-  transform: scale(1.1);
-  transition: 0.5s;
+  transform: translateX(100px);
+  transition: 1s;
 }
 
 .link_social:hover {
@@ -136,8 +135,8 @@ body {
   background-color: #2f244a;
   padding: 5px 30px;
   border-radius: 3px;
-  transform: scale(0.9);
-  transition: 0.2s;
+  transform: translateX(100px);
+  transition: 1s;
 }
 
 /* 2da tarjeta */
