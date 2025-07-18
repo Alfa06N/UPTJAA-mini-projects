@@ -447,16 +447,47 @@ main {
 
 button,
 .button {
+  background: var(--text-color-secondary);
+  color: #222;
   border: none;
-  background-color: var(--text-color-secondary);
-  color: var(--bkg-color-secondary);
-  font-size: var(--paragraph-font-size);
-  font-weight: var(--heading-font-weight);
+  border-radius: 8px;
+  padding: 0.7em 1.5em;
+  font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
-  padding: calc(var(--padding) * 1) calc(var(--padding) * 2);
-  border-radius: 5px;
-  transition: background-color 0.1s, color 0.1s;
-  margin-top: calc(var(--margin) * 2);
+  margin: 0.5em 0;
+  outline: none;
+  display: inline-block;
+}
+
+button,
+.button,
+.btn,
+.btn-primary {
+  transition: none !important;
+  box-shadow: none !important;
+  transform: none !important;
+  background: var(--text-color-secondary) !important;
+  color: #222 !important;
+}
+
+button:hover,
+.button:hover,
+.btn:hover,
+.btn-primary:hover,
+button:focus,
+.button:focus,
+.btn:focus,
+.btn-primary:focus,
+button:active,
+.button:active,
+.btn:active,
+.btn-primary:active {
+  transition: none !important;
+  box-shadow: none !important;
+  transform: none !important;
+  background: var(--text-color-secondary) !important;
+  color: #222 !important;
 }
 
 main h1 {
@@ -550,7 +581,6 @@ footer {
 .right-side {
   overflow: hidden;
   border-radius: 10px;
-  /* border: 2px solid var(--text-color-secondary); */
   box-shadow: var(--box-shadow);
   transition: height 0.2s ease-in-out, width 0.2s ease-in-out;
 }

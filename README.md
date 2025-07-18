@@ -1,1 +1,0 @@
-# UPTJAA-mini-projects
