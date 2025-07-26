@@ -1,0 +1,40 @@
+:root {
+  color-scheme: light dark;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+:root.light {
+  --background-color: #e2e2e2;
+  --card-bg-color: #fff;
+  --color: #222;
+}
+
+:root.dark {
+  --background-color: #111;
+  --card-bg-color: #181818;
+  --color: #eee;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  height: 100%;
+  width: 100dvw;
+  overflow-x: hidden;
+  background-color: var(--background-color);
+  color: var(--color);
+}
