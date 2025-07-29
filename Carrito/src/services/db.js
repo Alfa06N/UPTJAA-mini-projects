@@ -3,7 +3,7 @@ import mysql from "mysql2/promise";
 const pool = mysql.createPool({
   host: "localhost",
   user: "root",
-  password: "password",
+  password: "password", // Cambia esto por la tuya
   database: "shopping_cart",
   waitForConnections: true,
   connectionLimit: 10,
