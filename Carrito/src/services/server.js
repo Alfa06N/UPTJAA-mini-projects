@@ -10,7 +10,7 @@ import cartRoutes from "../routes/cartRoutes.js";
 dotenv.config();
 const app = express();
 // const PORT = process.env.PORT || 3000;
-
+export default app;
 app.use(cors());
 app.use(express.json());
 
