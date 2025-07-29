@@ -1,4 +1,4 @@
-import db from "../db.js"; // Conexión a la base de datos
+import db from "../services/db.js"; // Conexión a la base de datos
 
 export const createUser = async (req, res) => {
   const { username, email, password_hash } = req.body;
