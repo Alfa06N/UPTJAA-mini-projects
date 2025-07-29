@@ -2,7 +2,6 @@ import { Router } from "express";
 
 const router = Router();
 
-
 // Obtener todos los productos
 router.get("/", (req, res) => {});
 
@@ -17,6 +16,5 @@ router.put("/:idProduct", (req, res) => {});
 
 // Eliminar un producto
 router.delete("/:idProduct", (req, res) => {});
-
 
 export default router;

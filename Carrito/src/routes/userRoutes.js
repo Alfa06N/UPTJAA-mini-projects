@@ -1,9 +1,6 @@
-
-
 import { Router } from "express";
 
 const router = Router();
-
 
 // Crear un nuevo usuario
 router.post("/", (req, res) => {});

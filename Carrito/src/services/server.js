@@ -2,10 +2,10 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 
-import productsRoutes from "./routes/productsRoutes";
-import categoriesRoutes from "./routes/categoriaRoutes.js";
-import usersRoutes from "./routes/usersRoutes";
-import cartRoutes from "./routes/cartRoutes";
+import productRoutes from "../routes/productRoutes.js";
+import categoryRoutes from "../routes/categoryRoutes.js";
+import userRoutes from "../routes/userRoutes.js";
+import cartRoutes from "../routes/cartRoutes.js";
 
 dotenv.config();
 const app = express();
@@ -14,9 +14,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use("/api/products", productsRoutes);
-app.use("/api/categories", categoriesRoutes);
-app.use("/api/users", usersRoutes);
+app.use("/api/products", productRoutes);
+app.use("/api/categories", categoryRoutes);
+app.use("/api/users", userRoutes);
 app.use("/api/cart", cartRoutes);
 
 app.get("/", (req, res) => {
